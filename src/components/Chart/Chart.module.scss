@@ -69,6 +69,9 @@
   margin-right: 10px;
   padding: 6px;
   border-radius: 10px;
+  pre {
+    white-space: break-spaces !important;
+  }
 }
 
 .chart_item_doctor {
@@ -82,6 +85,10 @@
   margin-left: 10px;
   padding: 6px;
   border-radius: 10px;
+
+  pre {
+    white-space: break-spaces !important;
+  }
 }
 
 .button_start_chart {

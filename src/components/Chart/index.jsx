@@ -51,7 +51,7 @@ const Chart = () => {
               }
               style={lastIndex === index ? { marginBottom: "10px" } : {}}
             >
-              <span>{item.message}</span>
+              <pre>{item.message}</pre>
             </div>
           ))}
         </div>
