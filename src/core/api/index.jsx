@@ -1,9 +1,11 @@
 /* eslint-disable  */
 import axios from "axios";
-import { store } from "../../store";
+const https = require("https");
 
 const axiosConfig = {
-  baseURL: `http://45.94.156.194:8181/api/`,
+  baseURL: `https://45.94.156.194/api/`,
+  // Додайте параметр rejectUnauthorized зі значенням false для відключення перевірки сертифікату
+  httpsAgent: https.Agent({ rejectUnauthorized: false }),
 };
 
 const instance = axios.create(axiosConfig);
