@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosConfig = {
-  baseURL: `http://45.94.156.194:8181/api/`,
+  baseURL: `https://45.94.156.194:8181/api/`,
 };
 
 const instance = axios.create(axiosConfig);
