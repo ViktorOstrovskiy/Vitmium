@@ -9,11 +9,7 @@ const instance = axios.create(axiosConfig);
 
 instance.interceptors.request.use(
   async (req) => {
-    // const accessToken = docCookies.getItem("token");
-    // if (accessToken && req.headers) {
-    //   req.headers.Authorization = `Bearer ${accessToken}`;
     req.headers["Content-Type"] = "application/json";
-    // }
     return req;
   },
   (err) => {
