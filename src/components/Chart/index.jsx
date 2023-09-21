@@ -36,6 +36,14 @@ const Chart = () => {
     setIsLoading(false);
   };
 
+  const sendMessageStatic = async (text) => {
+    setIsLoading(true);
+    const data = await dispatch(sendMessageChart(idChart, text));
+    setListChart(data.data.chat);
+    setMessage("");
+    setIsLoading(false);
+  };
+
   const lastIndex = listChart.length - 1;
 
   return (
@@ -54,6 +62,22 @@ const Chart = () => {
               <pre>{item.message}</pre>
             </div>
           ))}
+          <div className={styles.chart_static}>
+            <div
+              className={styles.chart_item_user_static}
+              onClick={() => sendMessageStatic("Підбери мені чек-ап")}
+            >
+              <pre>Підбери мені чек-ап</pre>
+            </div>
+            <div
+              className={styles.chart_item_user_static}
+              onClick={() =>
+                sendMessageStatic("Які аналізи мені варто здати ?")
+              }
+            >
+              <pre>Які аналізи мені варто здати ?</pre>
+            </div>
+          </div>
         </div>
       ) : (
         <div

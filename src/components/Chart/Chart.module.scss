@@ -74,6 +74,35 @@
   }
 }
 
+.chart_static {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart_item_user_static {
+  width: 260px;
+  height: 25px;
+  background: #ececf485;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #202020cf;
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid #cfd0ec;
+  pre {
+    white-space: break-spaces !important;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .chart_item_doctor {
   width: 260px;
   background: #cfd0ec;
