@@ -69,7 +69,10 @@
   margin-right: 10px;
   padding: 6px;
   border-radius: 10px;
+  font-family: initial;
+
   pre {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     white-space: break-spaces !important;
   }
 }
@@ -95,8 +98,10 @@
   padding: 6px;
   border-radius: 10px;
   border: 1px solid #cfd0ec;
+  // font-family: initial;
   pre {
     white-space: break-spaces !important;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   &:hover {
     cursor: pointer;
@@ -114,8 +119,8 @@
   margin-left: 10px;
   padding: 6px;
   border-radius: 10px;
-
   pre {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     white-space: break-spaces !important;
   }
 }
